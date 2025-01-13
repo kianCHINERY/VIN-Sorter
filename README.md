@@ -4,6 +4,8 @@
 
 The **VIN Sorter** is an advanced Python-based application designed to analyse and categorize data from CSV files containing car makes, models, and Vehicle Identification Numbers (VINs). The application efficiently organizes this data into three distinct categories, ensuring accurate processing and management.
 
+---
+
 ## Available Makes 🔍🚗🎯
 
 1. Ford
@@ -25,6 +27,7 @@ The **VIN Sorter** is an advanced Python-based application designed to analyse a
 6. Jaguar
    - Checked Digits: 1 to 8
 
+---
 
 ## Categories 🚗✅❌
 
