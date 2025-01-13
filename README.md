@@ -58,6 +58,8 @@ To function effectively, the input data must adhere to the following requirement
   - **Model**
   - **VIN**
 
+ ---
+
 ### Column Specifications 🧩📋✔️
 
 - The order of the columns within the file is flexible, but their content must be correctly formatted.
