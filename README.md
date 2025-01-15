@@ -2,7 +2,7 @@
 
 ## Introduction 🚦📂📊
 
-The **VIN Sorter** is an advanced Python-based application designed to analyse and categorize data from CSV files containing car makes, models, and Vehicle Identification Numbers (VINs). The application efficiently organizes this data into three distinct categories, ensuring accurate processing and management.
+The **VIN Sorter** is an advanced Python-based application designed to analyse and categorize data from CSV files containing car makes, models, and Vehicle Identification Numbers (VINs). The application efficiently organizes this data into three distinct categories, ensuring accurate processing and management. The main focus of this system is to sort PNC data.
 
 ---
 
