@@ -2,7 +2,7 @@
 
 ## Introduction 🚦📂📊
 
-The **VIN Sorter** is an advanced Python-based application designed to analyse and categorize data from CSV files containing car makes, models, and Vehicle Identification Numbers (VINs). The application efficiently organizes this data into three distinct categories, ensuring accurate processing and management. The main focus of this system is to sort PNC data.
+The **VIN Sorter** is a Python-based application designed to analyse and categorize data from CSV files containing car makes, models, and Vehicle Identification Numbers (VINs). The application efficiently organizes this data into three distinct categories, ensuring accurate processing and management. The main focus of this system is to sort PNC data for data analytics.
 
 ---
 
@@ -27,6 +27,20 @@ The **VIN Sorter** is an advanced Python-based application designed to analyse a
 6. Jaguar
    - Checked Digits: 1 to 8
 
+7. Mercedes Benz
+   - Checked Digits: 4 to 7
+
+8. BMW
+    - Currently No Digits Checked
+
+9. Fiat
+    - Currently No Digits Checked
+   
+10. Citroen
+    - Currently No Digits Checked
+
+**All makes with no digits checked will return all data as incorrect.**
+
 ---
 
 ## Categories 🚗✅❌
@@ -39,7 +53,7 @@ The **VIN Sorter** is an advanced Python-based application designed to analyse a
 
 3. **Invalid VINs**
    - Data that cannot be processed or classified due to:
-     - Incompatibility with the system, often caused by the absence of a corresponding matrix during development.
+     - Incompatibility with the system, often caused by the absence of a corresponding model inside of the matrix.
      - Insufficient confidence from the system's algorithms to categorize the data accurately, particularly for certain makes (e.g., Jaguar). 🛠️🔍📉
 
 ---
@@ -47,6 +61,8 @@ The **VIN Sorter** is an advanced Python-based application designed to analyse a
 ## Dependencies 🖥️🔗⚙️
 
 The **VIN Sorter** relies on specific matrix files, which provide compatibility and processing rules for supported vehicle makes and models. These files are essential for accurate VIN categorization.
+
+These Matrixes are directly corralated by the aforementioned checked digit. When edits are made to the matrixes the digit(s) will be evidently shown in the column names.
 
 ## Input Requirements 📝📤🔍
 
