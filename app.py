@@ -434,7 +434,6 @@ class VinProcessorApp:
         # BMW is another odd one... I cant find the model identifying digit.
     }
 
-
 # Create and run the application
 root = tk.Tk()
 app = VinProcessorApp(root)
