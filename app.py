@@ -162,42 +162,6 @@ class VinProcessorApp:
                 globals()[f"{make.lower()}_matrix_columns"] = matrix_columns
 
 
-            global ford_matrix, ford_matrix_columns
-            ford_matrix = pd.read_csv('FordMatrix.csv')
-            ford_matrix_columns = ford_matrix.columns.tolist()
-
-            global mazda_matrix, mazda_matrix_columns
-            mazda_matrix = pd.read_csv('MazdaMatrix.csv')
-            mazda_matrix_columns = mazda_matrix.columns.tolist()
-
-            global toyota_matrix, toyota_matrix_columns
-            toyota_matrix = pd.read_csv('ToyotaMatrix.csv')
-            toyota_matrix_columns = toyota_matrix.columns.tolist()
-
-            global landrover_matrix, landrover_matrix_columns
-            landrover_matrix = pd.read_csv('LandRoverMatrix.csv')
-            landrover_matrix_columns = landrover_matrix.columns.tolist()
-
-            global jaguar_matrix, jaguar_matrix_columns
-            jaguar_matrix = pd.read_csv('JaguarMatrix.csv')
-            jaguar_matrix_columns = jaguar_matrix.columns.tolist()
-
-            global mercedes_benz_matrix, mercedes_benz_matrix_columns
-            mercedes_benz_matrix = pd.read_csv('MercedesBenzMatrix.csv')
-            mercedes_benz_matrix_columns = mercedes_benz_matrix.columns.tolist()
-
-            global bmw_matrix, bmw_matrix_columns
-            bmw_matrix = pd.read_csv('BMWMatrix.csv')
-            bmw_matrix_columns = bmw_matrix.columns.tolist()
-
-            global fiat_matrix, fiat_matrix_columns
-            fiat_matrix = pd.read_csv('BMWMatrix.csv')
-            fiat_matrix_columns = fiat_matrix.columns.tolist()
-
-            global citroen_matrix, citroen_matrix_columns
-            citroen_matrix = pd.read_csv('BMWMatrix.csv')
-            citroen_matrix_columns = citroen_matrix.columns.tolist()
-
             # Load the input file
             df = pd.read_csv(self.input_file)
 
@@ -353,8 +317,8 @@ class VinProcessorApp:
         if len(vin) != 17:
             incorrect_vins.append(row.copy())
         else:
-            if vin[3:6] in mercedes_benz_matrix_columns:
-                if model in mercedes_benz_matrix[vin[3:6]].values:
+            if vin[3:6] in mercedesbenz_matrix_columns:
+                if model in mercedesbenz_matrix[vin[3:6]].values:
                     confirmed_vins.append(row.copy())
                 else:
                     invalid_vins.append(row.copy())
